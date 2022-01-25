@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #ef4b4c;
+}
+.contenedor {
+    margin-top:8%;
+    display: flex;
+    width:400px;
+    height: 500px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 43px;
+    background: #ef4b4c;
+    box-shadow:  5px 5px 6px #d04142,
+             -5px -5px 6px #ff5556;
+}
+.tituloContador {
+    font-weight:bolder;
+    font-size: 2.5rem;
+}
+#contarCLicks {
+    font-size: 6rem;
+}
+.botones {
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.botones button {
+    margin: 10px;
+    width: 100px;
+    height:38px;
+    cursor: pointer;
+    background-color:white;
+    border:none;
+    border-radius: 5px;
+}
+#reiniciar{
+    width:60px;
+}
+#reiniciar:active {
+    cursor:progress;
+}
+.botones button:active {
+    background-color: rgb(238, 238, 238);
+    transform:translateY(7px);
+    box-shadow: 1px 4px rgb(238, 238, 238);
+}
+svg {
+    color: #ef4b4c;
+}
