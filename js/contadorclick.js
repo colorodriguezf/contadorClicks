@@ -25,7 +25,7 @@ function restar1() {
     }
 }
 const audioRestar = new Audio();
-audioRestar.src="sound-effects/ES_Suction Pop 3 - SFX Producer (mp3cut.net).mp3";
+audioRestar.src="sound-effects/ES_Squeak Drip - SFX Producer.mp3";
 function error() {
         document.getElementById("error").innerHTML="";
     }
@@ -33,4 +33,14 @@ function reiniciar() {
         numero=0;
         contador.innerHTML=numero;
     }
+    const audioReiniciar = new Audio();
+    audioReiniciar.src="sound-effects/pacman-dies.mp3";
+
+
+
+    const audioFondo = new Audio();
+    audioFondo.src="sound-effects/ES_Ricochet - oomiee.mp3";
+  
+ 
+    audioFondo.play();
 

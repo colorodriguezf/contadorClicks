@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@ body {
     justify-content:center;
     align-items:center;
     background-color: #ef4b4c;
+    font-family: Montserrat;
 }
 .contenedor {
     margin-top:8%;
@@ -59,4 +62,7 @@ body {
 }
 svg {
     color: #ef4b4c;
+}
+audio {
+    display: hidden;
 }
