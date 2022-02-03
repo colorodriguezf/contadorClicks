@@ -14,6 +14,7 @@ function sumar1() {
 const audioSumar = new Audio();
 audioSumar.src= "sound-effects/ES_Bubble Blip 2 - SFX Producer.mp3";
 
+
 function restar1() {
     if (numero>0) {
         numero--;
@@ -38,9 +39,9 @@ function reiniciar() {
 
 
 
-    const audioFondo = new Audio();
-    audioFondo.src="sound-effects/ES_Ricochet - oomiee.mp3";
+    // const audioFondo = new Audio();
+    // audioFondo.src="sound-effects/ES_Ricochet - oomiee.mp3";
+    // audioFondo.play();
+    
   
- 
-    audioFondo.play();
 

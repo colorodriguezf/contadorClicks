@@ -5,18 +5,150 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color: #ef4b4c;
-    font-family: Montserrat;
+
+/* CELULARES */
+@media only screen and (max-width:440px) {
+    body {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-family: Montserrat;
+        background: #75f1c8;
+
+    }
+    .contenedor {
+        margin-top:10%;
+        display: flex;
+        width:250px;
+        height: 500px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 43px;
+        background: #75f1c8;
+        box-shadow:  5px 5px 6px #0a5358,
+                 -5px -5px 6px rgb(8, 88, 78);
+    }
+    .tituloContador {
+        font-weight:bolder;
+        font-size: 2.5rem;
+    }
+    #contarCLicks {
+        font-size: 6rem;
+    }
+    .botones {
+        margin-top:10px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+    .botones button {
+        margin: 10px;
+        width: 150px;
+        height:50px;
+        cursor: pointer;
+        background-color:white;
+        border:none;
+        border-radius: 5px;
+    }
+    #reiniciar{
+        width:90px;
+    }
+    #reiniciar:active {
+        cursor:progress;
+    }
+    .botones button:active {
+        background-color: rgb(238, 238, 238);
+        transform:translateY(7px);
+        box-shadow: 1px 4px rgb(238, 238, 238);
+    }
+    svg {
+        color: #4befc6;
+        font-weight: bolder;
+    }
 }
+
+/* TABLETS */
+@media only screen and (min-width:440px) {
+    body {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color: #a04bef;
+        font-family: Montserrat;
+    }
 .contenedor {
-    margin-top:8%;
+    margin-top:10%;
     display: flex;
-    width:400px;
-    height: 500px;
+    width:410px;
+    height: 580px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 43px;
+    background-color: #a04bef;
+    box-shadow:  5px 5px 6px #862baa,
+                      -5px -5px 6px #631a8d;
+}
+.tituloContador {
+    font-weight:bolder;
+    font-size: 4.5rem;
+}
+#contarCLicks {
+    font-size: 5rem;
+}
+.botones {
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.botones button {
+    margin: 10px;
+    width: 300px;
+    height:58px;
+    cursor: pointer;
+    background-color:white;
+    border:none;
+    border-radius: 5px;
+}
+#reiniciar{
+    width:180px;
+}
+#reiniciar:active {
+    cursor:progress;
+}
+.botones button:active {
+    background-color: rgb(238, 238, 238);
+    transform:translateY(7px);
+    box-shadow: 1px 4px rgb(238, 238, 238);
+}
+svg {
+    color: #a04bef;
+}
+audio {
+    display: hidden;
+}
+}
+/*PC*/
+@media only screen and (min-width:900px) {
+    body {
+        margin-top: 3%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color: #ef4b4c;
+        font-family: Montserrat;
+    }
+.contenedor {
+    margin-top:2%;
+    display: flex;
+    width:700px;
+    height: 600px;
     color: white;
     justify-content: center;
     align-items: center;
@@ -28,10 +160,10 @@ body {
 }
 .tituloContador {
     font-weight:bolder;
-    font-size: 2.5rem;
+    font-size: 5rem;
 }
 #contarCLicks {
-    font-size: 6rem;
+    font-size: 7rem;
 }
 .botones {
     margin-top:10px;
@@ -42,15 +174,15 @@ body {
 }
 .botones button {
     margin: 10px;
-    width: 100px;
-    height:38px;
+    width: 270px;
+    height:58px;
     cursor: pointer;
     background-color:white;
     border:none;
     border-radius: 5px;
 }
 #reiniciar{
-    width:60px;
+    width:180px;
 }
 #reiniciar:active {
     cursor:progress;
@@ -65,4 +197,5 @@ svg {
 }
 audio {
     display: hidden;
+}
 }
